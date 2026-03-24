@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en-US">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <body>
+    <div ng-app="myApp" ng-controller="name">
+      <input
+        type="text"
+        ng-model="name"
+        name=""
+        id=""
+        placeholder="Enter your name"
+      />
+      <div>hello {{name}}</div>
+    </div>
+    <script>
+      const app = angular.module("myApp", []);
+      app.controller("name", ($scope) => {
+        $scope.name = "";
+      });
+    </script>
+  </body>
+</html>
